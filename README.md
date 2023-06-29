@@ -1,6 +1,8 @@
 # CI-CD-Pipeline-
 This repository holds the source code for a project that shows how to build a CI/CD pipeline using AWS CodeBuild for CI and Fleet as a GitOps tool to automate deployments to a Kubernetes cluster.
 
+![CI/CD Diagram](pipeline.jpeg)
+
 # Utilising Fleet GitOps and Terraform, create Kubernetes clusters.
 
 You will want Kubernetes clusters for Fleet management and additional downstream clusters for deployments in order to have a complete CI/CD workflow. You may find the repository with the source code for setting up K8s clusters in EKS, GKE, and AKS here. For managing deployments to the other downstream clusters, Fleet may be installed on EKS. There is a README for this.
