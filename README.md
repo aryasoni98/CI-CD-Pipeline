@@ -45,6 +45,10 @@ terraform apply -var-file="sensitive.tfvars" -auto-approve
 terraform destroy -var-file="sensitive.tfvars" -auto-approve
 ```
 
+## Kustomizations
+This section refers to the kustomizations directory. This folder contains the configuration files for the customizations to be made to the base deployment.yaml manifest file and exports the kustomize build to the k8s-manifests directory.
+
+
 ## K8s
 This section refers to the *k8s* directory. This folder contains two Kubernetes manifest files:
 * Deployment (deployment.yaml) - This file is generated as part of the CI stage using kustomize and has the Pod container configurations for the new version pushed to Docker Hub. 
